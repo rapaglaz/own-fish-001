@@ -1,0 +1,24 @@
+# Fish-specific files
+fish_variables
+
+# Linked completions
+completions/docker.fish
+completionskubctl.fish
+completions/orbctl.fish
+
+# OS files
+.DS_Store
+.DS_Store?
+._*
+.Spotlight-V100
+.Trashes
+
+# Editor files
+*.swp
+*.swo
+*~
+.vscode/
+.idea/
+
+# Logs and temporary files
+*.log

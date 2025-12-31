@@ -1,0 +1,37 @@
+# name: my-dark-001
+# colors reference: https://fishshell.com/docs/current/interactive.html#syntax-highlighting-variables
+# URL: https://github.com/rapaglaz/own-fish-001
+
+[dark]
+fish_color_autosuggestion '#7a8696' --italics
+fish_color_cancel '#b07a7f' --italics
+fish_color_command '#a6d2d4'
+fish_color_comment '#667c97'
+fish_color_cwd '#a0bacb'
+fish_color_cwd_root '#c28b8f' --bold
+fish_color_end '#8fae8f'
+fish_color_error '#b07a7f' --bold
+fish_color_escape '#8fb2c8'
+fish_color_history_current --bold --theme=default
+fish_color_host '#8fa7ba'
+fish_color_host_remote '#b09b78'
+fish_color_keyword '#7396c4'
+fish_color_normal '#aeb6c0'
+fish_color_operator '#8fae8f'
+fish_color_option '#8c9bad' --italics
+fish_color_param '#a6bda4'
+fish_color_quote '#8fae8f'
+fish_color_redirection '#9aa6b2'
+fish_color_search_match '#c9b27c' --bold
+fish_color_selection --reverse
+fish_color_status '#b07a7f'
+fish_color_user '#8fa7ba'
+fish_color_valid_path '#a0bacb'
+fish_pager_color_completion '#9097a0'
+fish_pager_color_description '#585d64' --italics
+fish_pager_color_prefix '#5a8991' --bold
+fish_pager_color_progress '#6f757d'
+fish_pager_color_selected_background --background=normal
+fish_pager_color_selected_completion '#b8a97a' --bold
+fish_pager_color_selected_description '#a89866' --italics
+fish_pager_color_selected_prefix '#b8a97a' --bold
