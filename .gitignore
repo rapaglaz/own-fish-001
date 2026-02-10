@@ -3,7 +3,7 @@ fish_variables
 
 # Linked completions
 completions/docker.fish
-completionskubctl.fish
+completions/kubectl.fish
 completions/orbctl.fish
 
 # OS files
