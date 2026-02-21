@@ -18,7 +18,7 @@ end
 
 # Android
 set -gx ANDROID_HOME "$HOME/.android-sdk"
-set -gx ANDROID_SDK_ROOT "$HOME/.android-sdk"
+set -gx ANDROID_SDK_ROOT "$HOME/.android-sdk" # deprecated alias for ANDROID_HOME; kept for backwards compat
 
 # GO
 set -gx GOPATH "$HOME/.go"
@@ -27,6 +27,7 @@ set -gx GOPATH "$HOME/.go"
 fish_add_path -g \
     "$HOME/bin" \
     "$HOME/.local/bin" \
+    "$GOPATH/bin" \
     "$ANDROID_HOME/emulator" \
     "$ANDROID_HOME/platform-tools" \
     "$ANDROID_HOME/cmdline-tools/latest/bin" \
@@ -70,8 +71,7 @@ sg=38;5;245:\
 *.bak=38;5;242"
 
 # eza colors
-set -gx EXA_COLORS "\
-\
+set -gx EZA_COLORS "\
 di=38;2;111;159;163:\
 fi=38;2;184;192;204:\
 ex=38;2;127;159;143:\
@@ -82,8 +82,6 @@ bd=38;2;91;111;138:\
 cd=38;2;91;111;138:\
 or=38;2;143;95;99:\
 mi=38;2;143;95;99:\
-\
-\
 ur=38;2;106;112;122:\
 uw=38;2;106;112;122:\
 ux=38;2;127;159;143:\
@@ -93,34 +91,22 @@ gx=38;2;127;159;143:\
 tr=38;2;106;112;122:\
 tw=38;2;106;112;122:\
 tx=38;2;127;159;143:\
-\
-\
 uu=38;2;138;148;166:\
 gu=38;2;138;148;166:\
-\
-\
 su=38;2;118;124;136:\
-\
-\
 da=38;2;95;102;112:\
-\
-\
 git=38;2;185;162;109:\
 git-new=38;2;127;159;143:\
 git-modified=38;2;143;95;99:\
 git-deleted=38;2;143;95;99:\
 git-renamed=38;2;127;159;143:\
 git-ignored=38;2;76;86;106:\
-\
-\
 *.tar=38;2;165;152;116:\
 *.tgz=38;2;165;152;116:\
 *.zip=38;2;165;152;116:\
 *.gz=38;2;165;152;116:\
 *.bz2=38;2;165;152;116:\
 *.xz=38;2;165;152;116:\
-\
-\
 *.log=38;2;76;86;106:\
 *.tmp=38;2;76;86;106:\
 *.bak=38;2;76;86;106"
