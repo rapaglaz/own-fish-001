@@ -3,9 +3,6 @@ status is-interactive || return
 # Remove welcome message
 set -g fish_greeting
 
-# Theme
-fish_config theme choose my-dark-001
-
 if command -q mise
     mise activate fish | source
 end
@@ -22,3 +19,6 @@ if command -q starship
     starship init fish | source
 end
 
+# Added by OrbStack: command-line tools and integration
+# This won't be added again if you remove it.
+source ~/.orbstack/shell/init2.fish 2>/dev/null || :
